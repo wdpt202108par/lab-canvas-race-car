@@ -8,6 +8,9 @@ const W = ctx.canvas.width;
 const H = ctx.canvas.height;
 
 function draw() {
+  //
+  // Exectuer toutes les 16ms
+  //
 
   // Iteration 1: road drawing
   //green rectangle
@@ -64,6 +67,8 @@ function draw() {
   // Iteration 2: car drawing
   //
 
+  car.draw()
+
   // TODO
 
   //
@@ -110,7 +115,7 @@ function startGame() {
   }
 
   // TODO
-
+  car = new Car();
   animLoop();
 }
 
