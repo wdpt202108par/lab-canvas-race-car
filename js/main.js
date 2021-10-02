@@ -57,14 +57,13 @@ function draw() {
 
 document.onkeydown = function (e) {
   if (!car) return;
-     if(e.keyCode == 37){
-    car.moveLeft()
-    
-  } else if(e.keyCode === 39){
-    car.moveRight()
 
-  }
   // TODO
+  if (e.keyCode === 37) {
+    car.moveLeft()
+  } else if (e.keyCode === 39) {
+    car.moveRight()
+  }
 }
 
 let raf;
