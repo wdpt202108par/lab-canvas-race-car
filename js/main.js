@@ -33,10 +33,7 @@ function draw() {
   //
   // Iteration 2: car drawing
   //
-  car = new Car();
-  //car.draw();
-
-  ctx.drawImage(car.img, car.w, car.h, car.x, car.y);
+  car.draw();
 
   //
   // Iteration #4: obstacles
@@ -82,6 +79,7 @@ function startGame() {
   }
 
   // TODO
+  car = new Car();
 
   animLoop();
 }
