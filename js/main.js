@@ -58,8 +58,6 @@ function draw() {
   ctx.fillStyle = 'white';
   ctx.fillRect(550,1500, W -985, H -1520);
   
-
-
   // TODO
 
   //
