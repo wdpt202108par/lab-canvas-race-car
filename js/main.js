@@ -10,6 +10,7 @@ const H = ctx.canvas.height;
 function draw() {
   //
   // Iteration 1: road drawing
+  //
   ctx.fillStyle = 'green';
   ctx.fillRect(0,0, 100, 1600);
   ctx.fillRect(900,0,100,1600);
@@ -28,19 +29,14 @@ function draw() {
   ctx.strokeStyle = 'white';
   ctx.lineWidth = 10;
   ctx.stroke();
-  
-
-  
-
-  //
-
-  // TODO
 
   //
   // Iteration 2: car drawing
   //
+  car = new Car();
+  //car.draw();
 
-  // TODO
+  ctx.drawImage(car.img, car.w, car.h, car.x, car.y);
 
   //
   // Iteration #4: obstacles
