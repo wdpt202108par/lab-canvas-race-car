@@ -25,10 +25,24 @@ class Car {
     ctx.drawImage(this.img, this.x, this.y, this.w, this.h);
   }
 
-  moveLeft() {
+ moveLeft() {
     // TODO
+    if (this.x === 0){
+      this.x = 0
+  
+    } else {
+      this.x -=25;
+    }
+    
+
   }
-  moveRight() {
-    // TODO
-  }
+    
+  moveRight(){
+    if (this.x === 1000){
+      this.x = 1000
+  
+    } else {
+      this.x += 25;
+    } 
+  } 
 }
