@@ -38,7 +38,7 @@ function draw() {
   //
   // Iteration #4: obstacles
   //
-
+   obstacles.draw();
   // TODO
 
   //
@@ -85,12 +85,16 @@ function startGame() {
 
   // TODO
   car = new Car();
-
+  
+  if(frames % 120 === 0){
+    obstacles = new Obstacle();
+  }
   animLoop();
 }
 
 document.getElementById("start-button").onclick = function() {
   startGame();
+
 };
 
 // auto-start
