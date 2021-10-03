@@ -1,5 +1,5 @@
 let car;
-let obstacles;
+let obstacles = [];
 let gameover;
 let points;
 
@@ -38,8 +38,7 @@ function draw() {
   //
   // Iteration #4: obstacles
   //
-   obstacles.draw();
-  // TODO
+  obstacles.map(obstacle => obstacle.draw());
 
   //
   // Iteration #5: collisions
@@ -73,6 +72,12 @@ function animLoop() {
 
   draw();
 
+  if(frames % 120 === 0){
+    obstacles.map(obstacle => obstacle.update())
+    obstacles.push(new Obstacle());
+  }
+
+
   if (!gameover) {
     raf = requestAnimationFrame(animLoop);
   }
@@ -86,9 +91,7 @@ function startGame() {
   // TODO
   car = new Car();
   
-  if(frames % 120 === 0){
-    obstacles = new Obstacle();
-  }
+  
   animLoop();
 }
 
