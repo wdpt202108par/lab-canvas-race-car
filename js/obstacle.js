@@ -24,5 +24,9 @@ class Obstacle {
 
   hits(car) {
     // TODO
+    if (car.x >= this.x && car.x < this.x + this.w && car.y >= this.y && car.y < this.y + this.h) {
+      console.log("gameover")
+      gameover = true;
+    }
   }
 }

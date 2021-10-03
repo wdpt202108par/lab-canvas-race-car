@@ -81,6 +81,8 @@ function animLoop() {
   if (!gameover) {
     raf = requestAnimationFrame(animLoop);
   }
+
+  obstacles.map(obstacle => obstacle.hits(car))
 }
 
 function startGame() {
