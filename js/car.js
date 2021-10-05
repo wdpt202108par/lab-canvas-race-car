@@ -9,15 +9,12 @@ class Car {
       const imgRatio = img.naturalWidth/img.naturalHeight; // 50/100 = .5
 
       // TODO
-      this.x = 0
-      this.y = 0
+      this.x = (W / 2) + 10
+      this.y = H - 250
       this.w = 100
       this.h = this.w / imgRatio
     }
     img.src = "images/car.png"; // telecharger l'image
-  }
-  putCar(){
-    
   }
 
   draw() {
@@ -29,9 +26,11 @@ class Car {
   }
 
   moveLeft() {
-    // TODO
+    this.x -= 20
   }
+
   moveRight() {
-    // TODO
+    this.x += 20
+    if (this.x > (W / 2)) this.x = 0
   }
 }

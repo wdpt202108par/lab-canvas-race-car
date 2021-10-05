@@ -4,7 +4,12 @@ function random(from, to) {
 
 class Obstacle {
   constructor() {
-    // TODO
+    var minX = 300
+    var maxX = 800
+    //this.x = 
+    //this.y =
+    //this.w = 
+    //this.h = 30
   }
 
   draw() {
