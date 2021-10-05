@@ -27,10 +27,11 @@ class Car {
 
   moveLeft() {
     this.x -= 20
+    if (this.x < 300 ) this.x = 0
   }
 
   moveRight() {
     this.x += 20
-    if (this.x > (W / 2)) this.x = 0
+    if (this.x > 800 ) this.x = 0
   }
 }
