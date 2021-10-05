@@ -101,6 +101,12 @@ document.onkeydown = function (e) {
     case 'ArrowRight' : 
       car.moveRight()
       break;
+    case 'ArrowUp':
+      car.moveUp()
+      break;
+    case 'ArrowDown':
+      car.moveDown()
+      break;
   }
 }
 

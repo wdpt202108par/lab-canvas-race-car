@@ -34,4 +34,12 @@ class Car {
     this.x += 20
     if (this.x > 800 ) this.x = 0
   }
+  moveUp(){
+    this.y -= 20
+    if (this.y < 300) this.y = 0
+  }
+  moveDown(){
+    this.y += 20
+    if (this.y < 300) this.y = 0
+  }
 }
